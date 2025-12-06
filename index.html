@@ -1,137 +1,480 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy - Halal Food Scanner App</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.7; padding: 20px; max-width: 900px; margin: auto; }
-        h1, h2 { color: #2c3e50; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Halal Food Scanner App</title>
+  <meta name="description" content="Privacy Policy for Halal Food Scanner App by Beyond7thSky." />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    /* Simple fallback font setup before Tailwind loads */
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  </style>
 </head>
-<body>
+<body class="bg-slate-950 text-slate-100 min-h-screen">
+  <!-- Page Wrapper -->
+  <div class="min-h-screen flex flex-col">
+    <!-- Navigation -->
+    <header class="sticky top-0 z-30 border-b border-slate-800/60 bg-slate-950/80 backdrop-blur">
+      <nav class="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+        <div class="flex items-center gap-2">
+          <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-500/10 ring-1 ring-emerald-400/40">
+            <span class="text-lg font-semibold text-emerald-300">H</span>
+          </div>
+          <div>
+            <p class="text-sm font-semibold tracking-tight text-slate-50">Halal Food Scanner</p>
+            <p class="text-[11px] text-slate-400">Privacy & Data Protection</p>
+          </div>
+        </div>
 
-<h1>Privacy Policy</h1>
-<p>Last Updated: <strong>December 2025</strong></p>
+        <div class="hidden items-center gap-6 text-xs font-medium text-slate-300 sm:flex">
+          <a href="#overview" class="hover:text-emerald-300">Overview</a>
+          <a href="#information" class="hover:text-emerald-300">Information</a>
+          <a href="#third-party" class="hover:text-emerald-300">Third‑Party</a>
+          <a href="#contact" class="hover:text-emerald-300">Contact</a>
+        </div>
 
-<p>
-    This Privacy Policy describes how <strong>Beyond7thSky</strong> ("we", "our", or "us") 
-    collects, uses, and protects the information of users ("you") when using 
-    the <strong>Halal Food Scanner App</strong>.
-</p>
+        <div class="flex items-center gap-2">
+          <button id="themeToggle" class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-700/70 bg-slate-900/70 text-[18px] text-amber-300 shadow-sm transition hover:border-emerald-400/60 hover:bg-slate-900">
+            <span id="themeIcon" aria-hidden="true">☾</span>
+            <span class="sr-only">Toggle dark mode</span>
+          </button>
+        </div>
+      </nav>
+    </header>
 
-<hr/>
+    <!-- Main Content -->
+    <main class="mx-auto flex w-full max-w-5xl flex-1 gap-6 px-4 pb-12 pt-8 sm:px-6 lg:pt-10">
+      <!-- Content Column -->
+      <div class="w-full space-y-6 lg:w-3/4">
+        <!-- Hero / Intro -->
+        <section class="relative overflow-hidden rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-900/80 via-slate-950 to-slate-950/90 p-6 shadow-2xl shadow-slate-950/80 sm:p-8" id="overview">
+          <div class="pointer-events-none absolute -left-20 -top-24 h-48 w-48 rounded-full bg-emerald-500/15 blur-3xl"></div>
+          <div class="pointer-events-none absolute -right-10 top-10 h-40 w-40 rounded-full bg-cyan-500/10 blur-3xl"></div>
 
-<h2>1. Overview</h2>
-<p>
-    Halal Food Scanner App is designed to help users check food ingredients, identify halal, haram, 
-    and doubtful items, and scan products using barcode/QR code scanning.  
-    We respect your privacy and do not collect unnecessary data.
-</p>
+          <div class="relative flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
+            <div class="space-y-3">
+              <p class="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/10 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-emerald-200">
+                Privacy Policy
+                <span class="inline-flex h-1.5 w-1.5 rounded-full bg-emerald-300"></span>
+                Halal Food Scanner App
+              </p>
 
-<hr/>
+              <h1 class="text-2xl font-semibold tracking-tight text-slate-50 sm:text-3xl">
+                Your privacy is protected by design
+              </h1>
 
-<h2>2. Information We Collect</h2>
+              <p class="max-w-2xl text-sm leading-relaxed text-slate-300">
+                This Privacy Policy explains how <span class="font-semibold text-slate-50">Beyond7thSky</span> ("we", "our", or "us")
+                handles information when you use the <span class="font-semibold text-slate-50">Halal Food Scanner App</span>. Our goal is to
+                help you quickly verify ingredients while keeping your personal data safe.
+              </p>
 
-<h3>2.1 No Personal Data Collection</h3>
-<p>
-    The app does <strong>NOT</strong> collect, store, or share any personal information such as:
-</p>
-<ul>
-    <li>Name</li>
-    <li>Email address</li>
-    <li>Phone number</li>
-    <li>Location</li>
-    <li>Contacts</li>
-    <li>Photos or media files</li>
-</ul>
+              <p class="text-xs text-slate-400">
+                Last Updated: <span class="font-semibold text-slate-200">December 2025</span>
+              </p>
+            </div>
 
-<h3>2.2 Camera Permission</h3>
-<p>
-    The app uses your device camera <strong>only</strong> for barcode/QR code scanning.  
-    We do not record, save, or upload any images or videos.
-</p>
+            <div class="mt-2 flex flex-col items-start gap-3 sm:items-end">
+              <div class="rounded-xl border border-slate-700/80 bg-slate-900/80 px-3 py-2 text-xs text-slate-200 shadow-sm">
+                <p class="font-semibold text-emerald-300">Key Principle</p>
+                <p class="mt-1 text-[11px] leading-relaxed text-slate-300">
+                  We do <span class="font-semibold text-slate-50">not collect</span> personal information such as your name, email,
+                  phone number, or location.
+                </p>
+              </div>
+              <a href="#summary" class="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-950 shadow-lg shadow-emerald-500/40 hover:bg-emerald-400">
+                View Quick Summary
+                <span aria-hidden="true">↘</span>
+              </a>
+            </div>
+          </div>
+        </section>
 
-<h3>2.3 Internet Connection</h3>
-<p>
-    Internet is used only for:
-</p>
-<ul>
-    <li>Displaying ads (Google AdMob or similar services)</li>
-    <li>Fetching updated ingredients data (if required)</li>
-</ul>
+        <!-- Quick Summary -->
+        <section id="summary" class="rounded-2xl border border-slate-800/80 bg-slate-950/80 p-5 sm:p-6">
+          <h2 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400">At a Glance</h2>
+          <p class="mt-1 text-sm font-semibold text-slate-100">What this privacy policy means for you</p>
 
-<hr/>
+          <div class="mt-4 grid gap-3 sm:grid-cols-2">
+            <div class="flex gap-3 rounded-xl border border-emerald-500/50 bg-emerald-500/5 p-3 text-xs text-slate-100">
+              <div class="mt-0.5 h-6 w-6 flex-none rounded-lg bg-emerald-500/20 text-center text-base leading-[1.6]">✓</div>
+              <div>
+                <p class="font-semibold text-emerald-200">No personal data collected</p>
+                <p class="mt-1 text-[11px] text-slate-200">We do not ask for or store your name, email, phone number, contacts, photos, or location.</p>
+              </div>
+            </div>
 
-<h2>3. How We Use Collected Information</h2>
-<p>
-    Because we do not collect personal data, no information is stored or shared.  
-    Camera access is used strictly for scanning purposes.
-</p>
+            <div class="flex gap-3 rounded-xl border border-sky-500/50 bg-sky-500/5 p-3 text-xs text-slate-100">
+              <div class="mt-0.5 h-6 w-6 flex-none rounded-lg bg-sky-500/20 text-center text-base leading-[1.6]">📷</div>
+              <div>
+                <p class="font-semibold text-sky-200">Camera for scanning only</p>
+                <p class="mt-1 text-[11px] text-slate-200">The camera is used strictly to scan barcodes/QR codes. Images and videos are not stored or uploaded.</p>
+              </div>
+            </div>
 
-<hr/>
+            <div class="flex gap-3 rounded-xl border border-amber-500/50 bg-amber-500/5 p-3 text-xs text-slate-100">
+              <div class="mt-0.5 h-6 w-6 flex-none rounded-lg bg-amber-500/20 text-center text-base leading-[1.6]">🌐</div>
+              <div>
+                <p class="font-semibold text-amber-200">Internet for ads & updates</p>
+                <p class="mt-1 text-[11px] text-slate-200">Network access is used for displaying ads and occasionally updating ingredients or product data.</p>
+              </div>
+            </div>
 
-<h2>4. Third-Party Services</h2>
-<p>The app may use third-party services that collect anonymous data for analytics and advertising:</p>
+            <div class="flex gap-3 rounded-xl border border-fuchsia-500/50 bg-fuchsia-500/5 p-3 text-xs text-slate-100">
+              <div class="mt-0.5 h-6 w-6 flex-none rounded-lg bg-fuchsia-500/20 text-center text-base leading-[1.6]">👨‍👩‍👧</div>
+              <div>
+                <p class="font-semibold text-fuchsia-200">Safe for all ages</p>
+                <p class="mt-1 text-[11px] text-slate-200">We do not knowingly collect data from children under 13, and the app is suitable for family use.</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-<ul>
-    <li>Google Play Services</li>
-    <li>AdMob (for ads)</li>
-</ul>
+        <!-- Detailed Sections / Accordions -->
+        <section id="information" class="space-y-4">
+          <!-- 1. Overview -->
+          <article class="accordion rounded-2xl border border-slate-800/80 bg-slate-950/80">
+            <button class="accordion-toggle flex w-full items-center justify-between gap-3 px-4 py-4 text-left sm:px-6" data-target="section-1">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Section 1</p>
+                <h2 class="text-sm font-semibold text-slate-50 sm:text-base">Overview</h2>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-slate-400">
+                <span class="hidden sm:inline">Tap to expand</span>
+                <span class="accordion-icon inline-flex h-6 w-6 items-center justify-center rounded-full border border-slate-600/60 text-[16px]">+</span>
+              </div>
+            </button>
+            <div id="section-1" class="accordion-panel border-t border-slate-800/80 px-4 pb-4 pt-2 text-sm text-slate-200 sm:px-6 sm:pb-6">
+              <p>
+                Halal Food Scanner App is designed to help users check food ingredients, identify halal, haram, and doubtful
+                items, and scan products using barcode/QR code scanning. We respect your privacy and do not collect
+                unnecessary data.
+              </p>
+            </div>
+          </article>
 
-<p>
-    These services may collect:
-</p>
+          <!-- 2. Information We Collect -->
+          <article class="accordion rounded-2xl border border-slate-800/80 bg-slate-950/80">
+            <button class="accordion-toggle flex w-full items-center justify-between gap-3 px-4 py-4 text-left sm:px-6" data-target="section-2">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Section 2</p>
+                <h2 class="text-sm font-semibold text-slate-50 sm:text-base">Information We Collect</h2>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-slate-400">
+                <span class="hidden sm:inline">Tap to expand</span>
+                <span class="accordion-icon inline-flex h-6 w-6 items-center justify-center rounded-full border border-slate-600/60 text-[16px]">+</span>
+              </div>
+            </button>
+            <div id="section-2" class="accordion-panel hidden border-t border-slate-800/80 px-4 pb-4 pt-2 text-sm text-slate-200 sm:px-6 sm:pb-6 space-y-4">
+              <div>
+                <h3 class="font-semibold text-slate-100">2.1 No Personal Data Collection</h3>
+                <p class="mt-2">The app does <span class="font-semibold text-slate-50">NOT</span> collect, store, or share any personal information such as:</p>
+                <ul class="mt-2 list-disc space-y-1 pl-6 text-sm text-slate-200">
+                  <li>Name</li>
+                  <li>Email address</li>
+                  <li>Phone number</li>
+                  <li>Location</li>
+                  <li>Contacts</li>
+                  <li>Photos or media files</li>
+                </ul>
+              </div>
 
-<ul>
-    <li>Device information</li>
-    <li>App usage statistics</li>
-    <li>Ad performance data</li>
-</ul>
+              <div>
+                <h3 class="font-semibold text-slate-100">2.2 Camera Permission</h3>
+                <p class="mt-2">
+                  The app uses your device camera <span class="font-semibold text-slate-50">only</span> for barcode/QR code scanning.
+                  We do not record, save, or upload any images or videos.
+                </p>
+              </div>
 
-<p>
-    This data is <strong>not personally identifiable</strong> and is handled under their own policies.
-</p>
+              <div>
+                <h3 class="font-semibold text-slate-100">2.3 Internet Connection</h3>
+                <p class="mt-2">Internet is used only for:</p>
+                <ul class="mt-2 list-disc space-y-1 pl-6 text-sm text-slate-200">
+                  <li>Displaying ads (Google AdMob or similar services)</li>
+                  <li>Fetching updated ingredients data (if required)</li>
+                </ul>
+              </div>
+            </div>
+          </article>
 
-<hr/>
+          <!-- 3. How We Use Collected Information -->
+          <article class="accordion rounded-2xl border border-slate-800/80 bg-slate-950/80">
+            <button class="accordion-toggle flex w-full items-center justify-between gap-3 px-4 py-4 text-left sm:px-6" data-target="section-3">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Section 3</p>
+                <h2 class="text-sm font-semibold text-slate-50 sm:text-base">How We Use Collected Information</h2>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-slate-400">
+                <span class="hidden sm:inline">Tap to expand</span>
+                <span class="accordion-icon inline-flex h-6 w-6 items-center justify-center rounded-full border border-slate-600/60 text-[16px]">+</span>
+              </div>
+            </button>
+            <div id="section-3" class="accordion-panel hidden border-t border-slate-800/80 px-4 pb-4 pt-2 text-sm text-slate-200 sm:px-6 sm:pb-6">
+              <p>
+                Because we do not collect personal data, no information is stored or shared. Camera access is used strictly
+                for scanning purposes.
+              </p>
+            </div>
+          </article>
 
-<h2>5. Children’s Privacy</h2>
-<p>
-    We do not knowingly collect personal information from children under the age of 13.  
-    The app is safe for all age groups.
-</p>
+          <!-- 4. Third-Party Services -->
+          <section id="third-party" class="space-y-4">
+            <article class="accordion rounded-2xl border border-slate-800/80 bg-slate-950/80">
+              <button class="accordion-toggle flex w-full items-center justify-between gap-3 px-4 py-4 text-left sm:px-6" data-target="section-4">
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Section 4</p>
+                  <h2 class="text-sm font-semibold text-slate-50 sm:text-base">Third-Party Services</h2>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-slate-400">
+                  <span class="hidden sm:inline">Tap to expand</span>
+                  <span class="accordion-icon inline-flex h-6 w-6 items-center justify-center rounded-full border border-slate-600/60 text-[16px]">+</span>
+                </div>
+              </button>
+              <div id="section-4" class="accordion-panel hidden border-t border-slate-800/80 px-4 pb-4 pt-2 text-sm text-slate-200 sm:px-6 sm:pb-6 space-y-4">
+                <p>
+                  The app may use third-party services that collect anonymous data for analytics and advertising, including:
+                </p>
+                <ul class="mt-1 list-disc space-y-1 pl-6 text-sm text-slate-200">
+                  <li>Google Play Services</li>
+                  <li>AdMob (for ads)</li>
+                </ul>
+                <p class="mt-3">These services may collect:</p>
+                <ul class="mt-1 list-disc space-y-1 pl-6 text-sm text-slate-200">
+                  <li>Device information</li>
+                  <li>App usage statistics</li>
+                  <li>Ad performance data</li>
+                </ul>
+                <p class="mt-3">
+                  This data is <span class="font-semibold text-slate-50">not personally identifiable</span> and is handled in
+                  accordance with each provider's separate privacy policy.
+                </p>
+              </div>
+            </article>
+          </section>
 
-<hr/>
+          <!-- 5–8 Other Sections -->
+          <article class="accordion rounded-2xl border border-slate-800/80 bg-slate-950/80">
+            <button class="accordion-toggle flex w-full items-center justify-between gap-3 px-4 py-4 text-left sm:px-6" data-target="section-5">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Section 5</p>
+                <h2 class="text-sm font-semibold text-slate-50 sm:text-base">Children’s Privacy</h2>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-slate-400">
+                <span class="hidden sm:inline">Tap to expand</span>
+                <span class="accordion-icon inline-flex h-6 w-6 items-center justify-center rounded-full border border-slate-600/60 text-[16px]">+</span>
+              </div>
+            </button>
+            <div id="section-5" class="accordion-panel hidden border-t border-slate-800/80 px-4 pb-4 pt-2 text-sm text-slate-200 sm:px-6 sm:pb-6">
+              <p>
+                We do not knowingly collect personal information from children under the age of 13. The app is safe for all
+                age groups.
+              </p>
+            </div>
+          </article>
 
-<h2>6. Data Security</h2>
-<p>
-    Since we do not collect personal data, no sensitive information is stored.  
-    All data used in scanning is processed directly on the device.
-</p>
+          <article class="accordion rounded-2xl border border-slate-800/80 bg-slate-950/80">
+            <button class="accordion-toggle flex w-full items-center justify-between gap-3 px-4 py-4 text-left sm:px-6" data-target="section-6">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Section 6</p>
+                <h2 class="text-sm font-semibold text-slate-50 sm:text-base">Data Security</h2>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-slate-400">
+                <span class="hidden sm:inline">Tap to expand</span>
+                <span class="accordion-icon inline-flex h-6 w-6 items-center justify-center rounded-full border border-slate-600/60 text-[16px]">+</span>
+              </div>
+            </button>
+            <div id="section-6" class="accordion-panel hidden border-t border-slate-800/80 px-4 pb-4 pt-2 text-sm text-slate-200 sm:px-6 sm:pb-6">
+              <p>
+                Since we do not collect personal data, no sensitive information is stored. All data used in scanning is
+                processed directly on the device.
+              </p>
+            </div>
+          </article>
 
-<hr/>
+          <article class="accordion rounded-2xl border border-slate-800/80 bg-slate-950/80">
+            <button class="accordion-toggle flex w-full items-center justify-between gap-3 px-4 py-4 text-left sm:px-6" data-target="section-7">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Section 7</p>
+                <h2 class="text-sm font-semibold text-slate-50 sm:text-base">Changes to This Privacy Policy</h2>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-slate-400">
+                <span class="hidden sm:inline">Tap to expand</span>
+                <span class="accordion-icon inline-flex h-6 w-6 items-center justify-center rounded-full border border-slate-600/60 text-[16px]">+</span>
+              </div>
+            </button>
+            <div id="section-7" class="accordion-panel hidden border-t border-slate-800/80 px-4 pb-4 pt-2 text-sm text-slate-200 sm:px-6 sm:pb-6">
+              <p>
+                We may update this Privacy Policy from time to time. Any changes will be posted on this page. Continued
+                use of the app after updates means you accept the revised policy.
+              </p>
+            </div>
+          </article>
 
-<h2>7. Changes to This Privacy Policy</h2>
-<p>
-    We may update this Privacy Policy from time to time.  
-    Any changes will be posted on this page.
-</p>
+          <article id="contact" class="accordion rounded-2xl border border-slate-800/80 bg-slate-950/80">
+            <button class="accordion-toggle flex w-full items-center justify-between gap-3 px-4 py-4 text-left sm:px-6" data-target="section-8">
+              <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-slate-400">Section 8</p>
+                <h2 class="text-sm font-semibold text-slate-50 sm:text-base">Contact Us</h2>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-slate-400">
+                <span class="hidden sm:inline">Tap to expand</span>
+                <span class="accordion-icon inline-flex h-6 w-6 items-center justify-center rounded-full border border-slate-600/60 text-[16px]">+</span>
+              </div>
+            </button>
+            <div id="section-8" class="accordion-panel hidden border-t border-slate-800/80 px-4 pb-4 pt-2 text-sm text-slate-200 sm:px-6 sm:pb-6 space-y-3">
+              <p>
+                If you have any questions or suggestions about our Privacy Policy, feel free to contact us:
+              </p>
+              <p class="flex items-center gap-2 text-sm">
+                <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500/15 text-[14px] text-emerald-300">@</span>
+                <a href="mailto:beyond7thsky136@gmail.com" class="font-medium text-emerald-300 hover:text-emerald-200 hover:underline">beyond7thsky136@gmail.com</a>
+              </p>
+              <p class="text-sm text-slate-300">
+                <span class="font-semibold text-slate-100">Developer:</span> Beyond7thSky
+              </p>
+            </div>
+          </article>
+        </section>
 
-<hr/>
+        <!-- Thank You -->
+        <section class="rounded-2xl border border-slate-800/80 bg-slate-950/90 p-5 text-sm text-slate-200 sm:p-6">
+          <p>
+            Thank you for using the <span class="font-semibold text-slate-50">Halal Food Scanner App</span>. We are committed to
+            making it easier to identify halal, haram, and doubtful ingredients while respecting your privacy at every step.
+          </p>
+        </section>
+      </div>
 
-<h2>8. Contact Us</h2>
-<p>
-    If you have any questions or suggestions about our Privacy Policy, feel free to contact us at:
-</p>
+      <!-- Sidebar / Quick Nav (Desktop) -->
+      <aside class="sticky top-24 hidden h-fit w-1/4 flex-none lg:block">
+        <div class="space-y-4 rounded-2xl border border-slate-800/80 bg-slate-950/90 p-4 text-xs text-slate-200">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">On This Page</p>
+          <ol class="mt-2 space-y-1">
+            <li><a href="#overview" class="hover:text-emerald-300">1. Overview</a></li>
+            <li><a href="#information" class="hover:text-emerald-300">2. Information We Collect</a></li>
+            <li><a href="#section-3" class="hover:text-emerald-300">3. How We Use Information</a></li>
+            <li><a href="#third-party" class="hover:text-emerald-300">4. Third‑Party Services</a></li>
+            <li><a href="#section-5" class="hover:text-emerald-300">5. Children’s Privacy</a></li>
+            <li><a href="#section-6" class="hover:text-emerald-300">6. Data Security</a></li>
+            <li><a href="#section-7" class="hover:text-emerald-300">7. Changes</a></li>
+            <li><a href="#contact" class="hover:text-emerald-300">8. Contact Us</a></li>
+          </ol>
 
-<p><strong>Email:</strong> <a href="mailto:beyond7thsky136@gmail.com">beyond7thsky136@gmail.com</a></p>
-<p><strong>Developer:</strong> Beyond7thSky</p>
+          <div class="mt-4 rounded-xl border border-emerald-500/40 bg-emerald-500/5 p-3 text-[11px] text-slate-100">
+            <p class="font-semibold text-emerald-200">Implementation Tip (for developers)</p>
+            <ul class="mt-2 list-disc space-y-1 pl-4 text-[11px] leading-relaxed text-slate-200">
+              <li>Host this page on your website or app support URL.</li>
+              <li>Link it from your app store listing (Google Play / App Store).</li>
+              <li>Show a link from the app settings → "Privacy Policy".</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </main>
 
-<hr/>
+    <!-- Footer -->
+    <footer class="border-t border-slate-900/80 bg-slate-950/95 text-xs text-slate-400">
+      <div class="mx-auto flex max-w-5xl flex-col gap-2 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+        <p>© <span id="year"></span> Beyond7thSky. All rights reserved.</p>
+        <p>Halal Food Scanner App · Privacy-first by design.</p>
+      </div>
+    </footer>
 
-<p>
-    Thank you for using the Halal Food Scanner App!
-</p>
+    <!-- Back to top button -->
+    <button id="backToTop" class="fixed bottom-5 right-4 z-40 hidden h-9 w-9 items-center justify-center rounded-full border border-slate-700/80 bg-slate-900/90 text-xs text-slate-100 shadow-lg shadow-slate-950/80 transition hover:border-emerald-400/70 hover:text-emerald-300">
+      ↑
+      <span class="sr-only">Back to top</span>
+    </button>
+  </div>
 
+  <!-- JavaScript for interactivity -->
+  <script>
+    // Auto-set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple dark/light mode toggle using a data attribute on html
+    (function () {
+      const root = document.documentElement;
+      const btn = document.getElementById('themeToggle');
+      const icon = document.getElementById('themeIcon');
+
+      // Initialize from localStorage
+      const saved = localStorage.getItem('hf-theme');
+      if (saved === 'light') {
+        root.classList.add('is-light');
+        document.body.classList.remove('bg-slate-950', 'text-slate-100');
+        document.body.classList.add('bg-slate-50', 'text-slate-900');
+        icon.textContent = '☀';
+      }
+
+      btn.addEventListener('click', () => {
+        const isLight = root.classList.toggle('is-light');
+        if (isLight) {
+          document.body.classList.remove('bg-slate-950', 'text-slate-100');
+          document.body.classList.add('bg-slate-50', 'text-slate-900');
+          icon.textContent = '☀';
+          localStorage.setItem('hf-theme', 'light');
+        } else {
+          document.body.classList.remove('bg-slate-50', 'text-slate-900');
+          document.body.classList.add('bg-slate-950', 'text-slate-100');
+          icon.textContent = '☾';
+          localStorage.setItem('hf-theme', 'dark');
+        }
+      });
+    })();
+
+    // Accordion behavior
+    document.querySelectorAll('.accordion-toggle').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-target');
+        const panel = document.getElementById(targetId);
+        const icon = btn.querySelector('.accordion-icon');
+
+        if (!panel) return;
+
+        const isHidden = panel.classList.contains('hidden');
+
+        // Close all other panels
+        document.querySelectorAll('.accordion-panel').forEach((p) => {
+          if (p.id !== targetId) {
+            p.classList.add('hidden');
+          }
+        });
+        document.querySelectorAll('.accordion-icon').forEach((i) => (i.textContent = '+'));
+
+        // Toggle current
+        if (isHidden) {
+          panel.classList.remove('hidden');
+          icon.textContent = '–';
+        } else {
+          panel.classList.add('hidden');
+          icon.textContent = '+';
+        }
+      });
+    });
+
+    // Back to top button logic
+    (function () {
+      const btn = document.getElementById('backToTop');
+      const showAfter = 300; // px
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > showAfter) {
+          btn.classList.remove('hidden');
+          btn.classList.add('flex');
+        } else {
+          btn.classList.add('hidden');
+          btn.classList.remove('flex');
+        }
+      });
+      btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
 </body>
 </html>
